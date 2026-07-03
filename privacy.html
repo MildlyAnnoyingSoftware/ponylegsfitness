@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <title>Datenschutzerklärung - PonyLegsFitness</title>
-  <meta name="description" content="Datenschutzerklärung für die iOS-App PonyLegsFitness.">
+  <title>Privacy Policy / Datenschutzerklärung - PonyLegsFitness</title>
+  <meta name="description" content="Privacy Policy and Datenschutzerklärung for PonyLegsFitness.">
   <style>
     :root {
       color-scheme: light;
@@ -22,6 +21,10 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       background: var(--canvas);
@@ -31,7 +34,7 @@
     }
 
     main {
-      width: min(880px, calc(100% - 32px));
+      width: min(960px, calc(100% - 32px));
       margin: 0 auto;
       padding: 48px 0 64px;
     }
@@ -50,8 +53,15 @@
     }
 
     h2 {
-      margin: 34px 0 10px;
-      font-size: 1.25rem;
+      margin: 0 0 12px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 32px 0 10px;
+      font-size: 1.12rem;
       line-height: 1.25;
       letter-spacing: 0;
     }
@@ -73,12 +83,39 @@
       padding-left: 1.3rem;
     }
 
-    .card {
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .summary {
       margin: 22px 0;
       padding: 18px;
       background: var(--surface);
       border: 1px solid var(--line);
       border-radius: 8px;
+    }
+
+    .language-section {
+      margin-top: 28px;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
     }
 
     .status {
@@ -110,62 +147,64 @@
 <body>
   <main>
     <header>
-      <h1>Datenschutzerklärung</h1>
-      <p>PonyLegsFitness für iOS</p>
-      <p>Stand: 6. Juni 2026</p>
-      <div class="status">Aktueller TestFlight-Build ohne Tracking, Werbung, Analytics, Backend oder iCloud-Sync</div>
+      <h1>Privacy Policy / Datenschutzerklärung</h1>
+      <p>PonyLegsFitness for iOS / PonyLegsFitness für iOS</p>
+      <p>Effective date / Stand: July 3, 2026 / 3. Juli 2026</p>
+      <div class="status">No tracking, ads, analytics, backend, or active iCloud sync</div>
+      <nav aria-label="Language navigation">
+        <a href="#de">Deutsch</a>
+        <a href="#en">English</a>
+      </nav>
     </header>
 
-    <section class="card">
-      <h2>Kurzfassung</h2>
-      <p>
-        PonyLegsFitness speichert Trainingspläne, Übungen, Sätze, Wiederholungen,
-        Gewichte, Pausenzeiten, Statistiken und App-Einstellungen lokal auf dem Gerät.
-        Für den aktuellen TestFlight-Build werden diese Daten nicht an den Entwickler
-        übertragen, nicht verkauft und nicht für Tracking, Werbung oder Analytics verwendet.
+    <section class="summary">
+      <h2>Short Summary / Kurzfassung</h2>
+      <p lang="de">
+        PonyLegsFitness speichert Trainingsdaten in der aktuellen Version lokal auf
+        deinem Gerät. Wir betreiben kein Nutzerkonto, kein Tracking, keine Werbung,
+        keine Analytics und kein eigenes Backend.
+      </p>
+      <p lang="en">
+        In the current version, PonyLegsFitness stores workout data locally on your
+        device. We do not provide user accounts, tracking, advertising, analytics,
+        or our own backend.
       </p>
     </section>
 
-    <section>
-      <h2>1. Verantwortlicher und Kontakt</h2>
+    <section id="de" lang="de" class="language-section">
+      <h2>Datenschutzerklärung auf Deutsch</h2>
+
+      <h3>1. Verantwortlicher und Kontakt</h3>
       <p>
-        Verantwortlich für diese App ist Marc Repey / Mildly Annoying Software.
-        Bei Fragen zum Datenschutz oder zur App erreichst du uns unter
+        Verantwortlich für diese App ist Marc Repey / Pony Legs Fitness. Bei Fragen
+        zum Datenschutz oder zur App erreichst du uns unter
         <a href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>.
       </p>
-    </section>
 
-    <section>
-      <h2>2. Geltungsbereich</h2>
+      <h3>2. Geltungsbereich</h3>
       <p>
-        Diese Datenschutzerklärung gilt für die iOS-App PonyLegsFitness. Die App wird
-        zunächst ausschließlich über Apple TestFlight an Freunde und Familie verteilt.
-        Wenn die App später über den App Store veröffentlicht oder um Funktionen wie
-        HealthKit, Apple Watch oder iCloud-Sync erweitert wird, wird diese
-        Datenschutzerklärung entsprechend aktualisiert.
+        Diese Datenschutzerklärung gilt für die iOS-App PonyLegsFitness. Die App kann
+        über den Apple App Store oder im Rahmen von Beta-Tests über Apple TestFlight
+        bereitgestellt werden.
       </p>
-    </section>
 
-    <section>
-      <h2>3. Welche Daten die App verarbeitet</h2>
+      <h3>3. Welche Daten die App lokal verarbeitet</h3>
       <p>Die App kann die folgenden Daten lokal auf deinem Gerät speichern:</p>
       <ul>
         <li>Trainingspläne, Trainingstage und ausgewählte Übungen</li>
         <li>Sätze, Wiederholungen, Gewichte, Gewichtseinheit und Pausenzeiten</li>
         <li>Trainingshistorie, erledigte Übungen und daraus berechnete Statistiken</li>
-        <li>App-Einstellungen wie Sprache, Standardpausen und Standardanzahl der Sätze</li>
-        <li>Manuell exportierte oder importierte Backup-Dateien im JSON-Format</li>
+        <li>App-Einstellungen wie Sprache, Darstellung, Standardpausen und Standardanzahl der Sätze</li>
+        <li>manuell exportierte oder importierte Backup-, Workout- oder Plan-Dateien</li>
       </ul>
       <p>
-        Diese Daten bleiben im aktuellen Build auf deinem Gerät. Der Entwickler erhält
-        keinen Zugriff auf diese Trainingsdaten, solange du sie nicht selbst exportierst,
-        teilst oder per E-Mail übermittelst.
+        Diese Daten bleiben in der aktuellen Version auf deinem Gerät. Der Entwickler
+        erhält keinen Zugriff auf diese Trainingsdaten, solange du sie nicht selbst
+        exportierst, teilst oder per E-Mail übermittelst.
       </p>
-    </section>
 
-    <section>
-      <h2>4. Keine Datenerhebung durch den Entwickler</h2>
-      <p>Der aktuelle Build von PonyLegsFitness verwendet:</p>
+      <h3>4. Keine Datenerhebung durch den Entwickler</h3>
+      <p>Die aktuelle Version von PonyLegsFitness verwendet:</p>
       <ul>
         <li>kein Nutzerkonto und keinen Login</li>
         <li>kein eigenes Backend und keine eigene Serververbindung</li>
@@ -173,78 +212,165 @@
         <li>keine Drittanbieter-Analytics</li>
         <li>kein Tracking</li>
         <li>keinen aktiven iCloud-Sync</li>
-        <li>noch keine HealthKit- oder Apple-Watch-Anbindung</li>
+        <li>keine aktive HealthKit- oder Apple-Watch-Anbindung</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>5. Backups und Teilen von Daten</h2>
+      <h3>5. Backups, Exporte und Teilen von Daten</h3>
       <p>
-        Die App enthält eine manuelle Backup- und Restore-Funktion. Wenn du ein Backup
-        exportierst, erstellt die App eine JSON-Datei mit deinen lokalen App-Daten.
-        Du entscheidest selbst, wo diese Datei gespeichert oder mit wem sie geteilt wird.
-        Wenn du dafür Dienste wie iCloud Drive, E-Mail, Messenger oder andere Apps
-        verwendest, gelten zusätzlich die Datenschutzbedingungen dieser Dienste.
+        Die App enthält manuelle Export-, Import-, Backup- und Restore-Funktionen.
+        Wenn du Daten exportierst, erstellt die App Dateien mit deinen lokalen
+        App-Daten. Du entscheidest selbst, wo diese Dateien gespeichert oder mit wem
+        sie geteilt werden. Wenn du dafür Dienste wie iCloud Drive, E-Mail, Messenger
+        oder andere Apps verwendest, gelten zusätzlich die Datenschutzbedingungen
+        dieser Dienste.
       </p>
-    </section>
 
-    <section>
-      <h2>6. TestFlight und Apple</h2>
+      <h3>6. App Store, TestFlight und Apple</h3>
       <p>
-        Da PonyLegsFitness derzeit über TestFlight verteilt wird, kann Apple im Rahmen
-        von TestFlight eigene Daten verarbeiten, zum Beispiel Informationen zu deiner
-        Beta-Teilnahme, Gerätedaten, Crash-Logs oder freiwilliges Feedback. Diese
-        Verarbeitung erfolgt durch Apple nach den jeweils geltenden Apple-Bedingungen
-        und Datenschutzinformationen für TestFlight und Apple-Dienste.
+        Wenn du PonyLegsFitness über den App Store oder TestFlight installierst, kann
+        Apple eigene Daten verarbeiten, zum Beispiel Informationen zu Downloads,
+        Käufen, Gerätedaten, Crash-Logs oder freiwilligem Feedback. Diese Verarbeitung
+        erfolgt durch Apple nach den jeweils geltenden Apple-Bedingungen und
+        Datenschutzinformationen für App Store, TestFlight und Apple-Dienste.
       </p>
-    </section>
 
-    <section>
-      <h2>7. Support per E-Mail</h2>
+      <h3>7. Support per E-Mail</h3>
       <p>
         Wenn du uns per E-Mail kontaktierst, verarbeiten wir deine E-Mail-Adresse und
         die Inhalte deiner Nachricht ausschließlich zur Bearbeitung deiner Anfrage.
-        Diese Daten werden nicht für Werbung oder Tracking verwendet und nicht an Dritte
-        verkauft.
+        Diese Daten werden nicht für Werbung oder Tracking verwendet und nicht an
+        Dritte verkauft.
       </p>
-    </section>
 
-    <section>
-      <h2>8. Speicherdauer und Löschung</h2>
+      <h3>8. Speicherdauer und Löschung</h3>
       <p>
         Lokal gespeicherte App-Daten bleiben auf deinem Gerät, bis du sie in der App
-        löschst, Statistiken zurücksetzt, die App-Daten über iOS entfernst oder die App
-        deinstallierst. Manuell exportierte Backup-Dateien verwaltest und löschst du
-        selbst am jeweiligen Speicherort.
+        löschst, Statistiken zurücksetzt, die App-Daten über iOS entfernst oder die
+        App deinstallierst. Manuell exportierte Dateien verwaltest und löschst du
+        selbst am jeweiligen Speicherort. Support-Anfragen per E-Mail bewahren wir nur
+        so lange auf, wie es für die Bearbeitung der Anfrage und eine angemessene
+        Nachverfolgung erforderlich ist.
       </p>
-      <p>
-        Support-Anfragen per E-Mail bewahren wir nur so lange auf, wie es für die
-        Bearbeitung der Anfrage und eine angemessene Nachverfolgung erforderlich ist.
-      </p>
-    </section>
 
-    <section>
-      <h2>9. Deine Rechte</h2>
+      <h3>9. Deine Rechte</h3>
       <p>
         Soweit personenbezogene Daten von uns verarbeitet werden, kannst du Auskunft,
-        Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch verlangen.
-        Da Trainingsdaten im aktuellen Build lokal auf deinem Gerät gespeichert werden
-        und nicht an uns übertragen werden, können wir diese lokalen Daten nicht einsehen
-        oder zentral löschen. Du kannst sie direkt auf deinem Gerät verwalten.
+        Berichtigung, Löschung, Einschränkung der Verarbeitung oder Widerspruch
+        verlangen. Da Trainingsdaten in der aktuellen Version lokal auf deinem Gerät
+        gespeichert und nicht an uns übertragen werden, können wir diese lokalen Daten
+        nicht einsehen oder zentral löschen. Du kannst sie direkt auf deinem Gerät
+        verwalten.
       </p>
       <p>
         Für Datenschutzanfragen erreichst du uns unter
         <a href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>.
       </p>
+
+      <h3>10. Änderungen dieser Datenschutzerklärung</h3>
+      <p>
+        Wir können diese Datenschutzerklärung aktualisieren, wenn sich Funktionen der
+        App oder rechtliche Anforderungen ändern. Das gilt insbesondere, wenn später
+        iCloud-Sync, HealthKit, Apple Watch, ein Backend, Nutzerkonten oder
+        Analysefunktionen ergänzt werden.
+      </p>
     </section>
 
-    <section>
-      <h2>10. Änderungen dieser Datenschutzerklärung</h2>
+    <section id="en" lang="en" class="language-section">
+      <h2>Privacy Policy in English</h2>
+
+      <h3>1. Controller and contact</h3>
       <p>
-        Wir können diese Datenschutzerklärung aktualisieren, wenn sich Funktionen der App
-        oder rechtliche Anforderungen ändern. Das gilt insbesondere, wenn später iCloud-Sync,
-        HealthKit, Apple Watch, ein Backend, Nutzerkonten oder Analysefunktionen ergänzt
-        werden.
+        This app is provided by Marc Repey / Pony Legs Fitness. For privacy questions
+        or app support, contact us at
+        <a href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>.
+      </p>
+
+      <h3>2. Scope</h3>
+      <p>
+        This Privacy Policy applies to the iOS app PonyLegsFitness. The app may be
+        provided through the Apple App Store or, for beta testing, through Apple
+        TestFlight.
+      </p>
+
+      <h3>3. Data processed locally by the app</h3>
+      <p>The app may store the following data locally on your device:</p>
+      <ul>
+        <li>workout plans, training days, and selected exercises</li>
+        <li>sets, repetitions, weights, weight units, and rest times</li>
+        <li>workout history, completed exercises, and statistics calculated from them</li>
+        <li>app settings such as language, appearance, default rest time, and default set count</li>
+        <li>manually exported or imported backup, workout, or plan files</li>
+      </ul>
+      <p>
+        In the current version, this data remains on your device. The developer does
+        not receive access to your workout data unless you choose to export, share, or
+        send it by email.
+      </p>
+
+      <h3>4. No data collection by the developer</h3>
+      <p>The current version of PonyLegsFitness does not use:</p>
+      <ul>
+        <li>user accounts or login</li>
+        <li>our own backend or server connection</li>
+        <li>advertising</li>
+        <li>third-party analytics</li>
+        <li>tracking</li>
+        <li>active iCloud sync</li>
+        <li>active HealthKit or Apple Watch integration</li>
+      </ul>
+
+      <h3>5. Backups, exports, and sharing data</h3>
+      <p>
+        The app includes manual export, import, backup, and restore features. When you
+        export data, the app creates files containing your local app data. You decide
+        where those files are stored and with whom they are shared. If you use services
+        such as iCloud Drive, email, messengers, or other apps, the privacy terms of
+        those services also apply.
+      </p>
+
+      <h3>6. App Store, TestFlight, and Apple</h3>
+      <p>
+        If you install PonyLegsFitness through the App Store or TestFlight, Apple may
+        process its own data, such as information about downloads, purchases, device
+        information, crash logs, or voluntary feedback. This processing is governed by
+        Apple's applicable terms and privacy information for the App Store, TestFlight,
+        and Apple services.
+      </p>
+
+      <h3>7. Email support</h3>
+      <p>
+        If you contact us by email, we process your email address and the contents of
+        your message only to respond to your request. This data is not used for
+        advertising or tracking and is not sold to third parties.
+      </p>
+
+      <h3>8. Storage period and deletion</h3>
+      <p>
+        Locally stored app data remains on your device until you delete it in the app,
+        reset statistics, remove app data through iOS, or uninstall the app. Manually
+        exported files are managed and deleted by you at the location where you store
+        them. Email support requests are kept only as long as necessary to handle the
+        request and for reasonable follow-up.
+      </p>
+
+      <h3>9. Your rights</h3>
+      <p>
+        Where we process personal data, you may request access, correction, deletion,
+        restriction of processing, or object to processing. Because workout data is
+        stored locally on your device in the current version and is not transmitted to
+        us, we cannot view or centrally delete that local data. You can manage it
+        directly on your device.
+      </p>
+      <p>
+        For privacy requests, contact
+        <a href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>.
+      </p>
+
+      <h3>10. Changes to this Privacy Policy</h3>
+      <p>
+        We may update this Privacy Policy if app features or legal requirements change.
+        This applies especially if iCloud sync, HealthKit, Apple Watch, a backend, user
+        accounts, or analytics features are added in the future.
       </p>
     </section>
 
