@@ -1,31 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - PonyLegsFitness</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #333; }
-        h1 { color: #111; }
-        a { color: #007aff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .box { background: #f5f5f7; padding: 20px; border-radius: 12px; margin-top: 20px; }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support - PonyLegsFitness</title>
+  <meta name="description" content="Support for PonyLegsFitness. Support für PonyLegsFitness.">
+  <style>
+    :root {
+      color-scheme: light;
+      --canvas: #f0eee5;
+      --surface: #fffdf6;
+      --ink: #1a1c1c;
+      --muted: #555852;
+      --line: #d7d1c2;
+      --signal: #ef6b42;
+      --positive: #2b8c63;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--canvas);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
+
+    header {
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.45rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 28px 0 8px;
+      font-size: 1.05rem;
+      letter-spacing: 0;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration-color: var(--signal);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    nav a,
+    .mail-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--surface);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .language-section {
+      margin-top: 24px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 8px;
+      color: var(--positive);
+      font-weight: 700;
+    }
+
+    .status::before {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--positive);
+      content: "";
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-    <h1>Support & Kontakt</h1>
-    <p>Vielen Dank, dass du <strong>PonyLegsFitness</strong> nutzt. Wenn du Fragen, Probleme oder Feedback hast, helfen wir dir gerne weiter.</p>
-    
-    <div class="box">
-        <h3>So erreichst du uns:</h3>
-        <p>Schreibe einfach eine E-Mail an: <a href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a></p>
-        <p>Wir antworten in der Regel innerhalb von 24-48 Stunden.</p>
-        <p>Die App erfordert keinen Login. Trainingsdaten werden im aktuellen Build lokal auf deinem Gerät gespeichert.</p>
-    </div>
+  <main>
+    <header>
+      <h1>PonyLegsFitness Support</h1>
+      <p>Pony Legs Fitness</p>
+      <div class="status">Support in Deutsch und Englisch / Support in German and English</div>
+      <nav aria-label="Language navigation">
+        <a href="#de">Deutsch</a>
+        <a href="#en">English</a>
+      </nav>
+    </header>
 
-    <hr style="border: 0; border-top: 1px solid #e5e5ea; margin: 40px 0;">
+    <section id="de" lang="de" class="language-section">
+      <h2>Support auf Deutsch</h2>
+      <p>
+        Wenn du Fragen hast, einen Fehler melden möchtest oder Feedback zu
+        PonyLegsFitness geben willst, schreibe bitte an:
+      </p>
+
+      <p>
+        <a class="mail-link" href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>
+      </p>
+
+      <h3>Bitte sende nach Möglichkeit mit</h3>
+      <ul>
+        <li>eine kurze Beschreibung des Problems oder deiner Frage</li>
+        <li>deine iOS-Version und dein iPhone-Modell</li>
+        <li>die App-Version, falls du sie kennst</li>
+        <li>optional Screenshots, wenn sie beim Verständnis helfen</li>
+      </ul>
+
+      <h3>Hinweise zur App</h3>
+      <p>
+        PonyLegsFitness erfordert keinen Login. Trainingsdaten werden in der aktuellen
+        Version lokal auf deinem Gerät gespeichert. Exportierte Backup- oder
+        Workout-Dateien verwaltest du selbst am jeweiligen Speicherort.
+      </p>
+
+      <p>
+        Datenschutzerklärung:
+        <a href="https://mildlyannoyingsoftware.github.io/ponylegsfitness/privacy.html">
+          mildlyannoyingsoftware.github.io/ponylegsfitness/privacy.html
+        </a>
+      </p>
+    </section>
+
+    <section id="en" lang="en" class="language-section">
+      <h2>Support in English</h2>
+      <p>
+        If you have a question, want to report a bug, or would like to send feedback
+        about PonyLegsFitness, please contact:
+      </p>
+
+      <p>
+        <a class="mail-link" href="mailto:mildlyannoying@icloud.com">mildlyannoying@icloud.com</a>
+      </p>
+
+      <h3>Please include, if possible</h3>
+      <ul>
+        <li>a short description of the issue or question</li>
+        <li>your iOS version and iPhone model</li>
+        <li>the app version, if you know it</li>
+        <li>optional screenshots if they help explain the issue</li>
+      </ul>
+
+      <h3>App notes</h3>
+      <p>
+        PonyLegsFitness does not require a login. In the current version, workout data
+        is stored locally on your device. Exported backup or workout files are managed
+        by you at the location where you save or share them.
+      </p>
+
+      <p>
+        Privacy Policy:
+        <a href="https://mildlyannoyingsoftware.github.io/ponylegsfitness/privacy.html">
+          mildlyannoyingsoftware.github.io/ponylegsfitness/privacy.html
+        </a>
+      </p>
+    </section>
+
     <footer>
-        <p><small><a href="privacy.html">Datenschutzerklärung</a> | (C) 2026 MildlyAnnoying Software</small></p>
+      <p>PonyLegsFitness is provided by Marc Repey / Pony Legs Fitness.</p>
     </footer>
+  </main>
 </body>
 </html>
